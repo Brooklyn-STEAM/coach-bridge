@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles/main.css">
     <title>My Project</title>
 </head>
+
 <body>
-    <h1 class="text-center text-5xl font-bold my-12 text-primary underline decoration-primary decoration-4 underline-offset-8">Welcome!</h1>
 
-    <include src="components/hello_world.html"></include>
-
-    <section class="text-center">
-        <a href="https://daisyui.com/docs" target="_blank" class="btn btn-primary">DaisyUI Documentation</a>
-        <a href="https://tailwindcss.com/docs" target="_blank" class="btn btn-secondary">Tailwind CSS Documentation</a>
-    </section>
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl">Coach Connect</a>
+        </div>
+        <div class="flex-none">
+            <ul class="menu menu-horizontal px-1">
+                
+                <li>
+                    <details>
+                        <summary>Pages</summary>
+                        <ul class="bg-base-100 rounded-t-none p-2">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="find.html">Find A Coach</a></li>
+                            <li><a href="aboutme,html">About us</a></li>
+                            <li><a href="contacts.html">Contact us</a></li>
+                            <li><a href="product.html">Our Product</a></li>
+                            <li><a href="recommend.html">Recommended coaches</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
