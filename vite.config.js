@@ -9,6 +9,13 @@ export default {
         vituum(),
         posthtml({root: './src'}),
         tailwindcss(),
-        cloudflare()
+        cloudflare({
+            config: {
+                routes: [
+                    { pattern: 'coach-bridge.cyberchase.co', custom_domain: true }
+                ],
+                preview_urls: true
+            }
+        })
     ]
 }
