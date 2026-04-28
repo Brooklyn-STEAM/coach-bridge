@@ -1,36 +1,83 @@
 <!DOCTYPE html>
-<html data-theme="garden" lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/src/styles/main.css">
-        <title>Contact Options</title>
-    </head>
+<html data-theme="lemonade" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <title>Join as a Coach</title>
+</head>
 <body>
-    <div class="navbar bg-base-100 shadow-sm">
-        <div class="flex-1">
-            <a class="btn btn-ghost text-xl">Coach Connect</a>
+    <div class="space-between">
+        <div class="navbar bg-base-100 shadow-sm">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-xl">Coach Connect</a>
+            </div>
+            <div class="flex-none">
+                <ul class="menu menu-horizontal px-1">
+    
+                    <li>
+                        <details>
+                            <summary>Pages</summary>
+                            <ul class="bg-base-100 rounded-t-none p-2">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="find.html">Find A Coach</a></li>
+                                <li><a href="aboutme,html">About us</a></li>
+                                <li><a href="contacts.html">Contact us</a></li>
+                                <li><a href="product.html">Our Product</a></li>
+                                <li><a href="join.html">Recommended coaches</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="flex-none">
-            <ul class="menu menu-horizontal px-1">
+    
 
-                <li>
-                    <details>
-                        <summary>Pages</summary>
-                        <ul class="bg-base-100 rounded-t-none p-2">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="find.html">Find A Coach</a></li>
-                            <li><a href="aboutme,html">About us</a></li>
-                            <li><a href="contacts.html">Contact us</a></li>
-                            <li><a href="product.html">Our Product</a></li>
-                            <li><a href="join.html">Recommended coaches</a></li>
-                        </ul>
-                    </details>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <p class="size-xxxl">This is</p>
+  
+  <h1 class="text-4xl text-center font-bold mt-10">
+    Join as a Coach
+  </h1>
 
-    </body>
-</html>
+  <p class="text-center mt-2 text-lg">
+    Share your skills. Get discovered. Start coaching athletes.
+  </p>
+
+  
+  <form class="text-center text-xl mt-6" action="https://form-to-email.steamc.workers.dev/" method="post">
+    
+    <input name="send-to" value="emaricheau@brooklynsteamcenter.org" hidden>
+
+    
+    <label class="input input-primary">
+      <input type="text" placeholder="Full Name" required />
+    </label>
+
+    <br><br>
+
+    <label class="input input-primary">
+      <input type="email" placeholder="Email Address" required />
+    </label>
+
+    <br><br>
+
+    <select class="select select-primary">
+      <option disabled selected>What do you coach?</option>
+      <option>Basketball</option>
+      <option>Football</option>
+      <option>Soccer</option>
+      <option>Boxing</option>
+      <option>Other</option>
+    </select>
+
+    <br><br>
+
+
+    <input type="text" placeholder="Years of Experience" class="input input-primary" />
+
+    <br><br>
+
+    
+    <textarea class="textarea textarea-primary" placeholder="Short Bio / What makes you a great coach?"></textarea>
+    <br><br><button type="submit" class="btn btn-secondary">
+        Apply as Coach
+      </button>
